@@ -15,6 +15,11 @@ git clone https://github.com/diego-ch/selfhosted.git
 cd selfhosted
 ```
 
+### Create the docker network
+```
+docker network create homelab
+```
+
 ### Run the Stack
 ```
 docker compose up -d
