@@ -12,8 +12,8 @@ services:
     restart: unless-stopped
 
     volumes:
-      - ${HOMELAB_CONFIG_DIR}/nginx-proxy-manager/data:/data
-      - ${HOMELAB_CONFIG_DIR}/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+      - ${CONFIG_DIR}/nginx-proxy-manager/data:/data
+      - ${CONFIG_DIR}/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
 
     ports:
       - '81:81'           # MANAGEMENT PORT

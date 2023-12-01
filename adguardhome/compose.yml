@@ -12,8 +12,8 @@ services:
     restart: always
 
     volumes:
-      - ${HOMELAB_CONFIG_DIR}/adguardhome/work_dir:/opt/adguardhome/work
-      - ${HOMELAB_CONFIG_DIR}/adguardhome/conf_dir:/opt/adguardhome/conf
+      - ${CONFIG_DIR}/adguardhome/work_dir:/opt/adguardhome/work
+      - ${CONFIG_DIR}/adguardhome/conf_dir:/opt/adguardhome/conf
 
     ports:
       - 53:53/tcp
