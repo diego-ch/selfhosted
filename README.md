@@ -12,7 +12,7 @@ This is collection of useful services and applications in a containerized enviro
 
 ## Getting Started
 To get started, make sure you have Docker installed on your machine.
-If you don't have it installed, you can follow the official [Docker installation guide](https://docs.docker.com/desktop/install).
+If you don't have it installed, you can follow the official [Docker Get Started Guide](https://docs.docker.com/get-docker/).
 
 ```
 # clone the repository
