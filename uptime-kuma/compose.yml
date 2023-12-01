@@ -1,0 +1,25 @@
+version: '3'
+
+networks:
+  homelab:
+     name: homelab
+     external: true
+
+services:
+  uptime-kuma:
+    image: louislam/uptime-kuma:alpine
+    container_name: uptime-kuma
+    restart: unless-stopped
+
+    environment:
+      TZ: ${TZ}
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${CONFIG_DIR}/uptime-kuma:/app/data
+
+    # ports:
+    #  - 3001:3001
+
+    networks:
+      - homelab
