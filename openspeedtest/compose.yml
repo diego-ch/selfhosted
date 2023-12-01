@@ -1,0 +1,19 @@
+version: '3'
+
+networks:
+  homelab:
+    name: homelab
+    external: true
+
+services:
+    speedtest:
+        image: openspeedtest/latest
+        container_name: openspeedtest
+        restart: unless-stopped
+
+        # ports:
+        #   - 3000:3000   # http
+        #   - 3001:3001   # https
+
+        networks:
+          - homelab

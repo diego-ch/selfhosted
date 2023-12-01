@@ -16,9 +16,9 @@ services:
       - ${CONFIG_DIR}/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
 
     ports:
-      - '81:81'           # MANAGEMENT PORT
-      - '80:80'           # HTTP
-      - '443:443'         # HTTPS
+      - 81:81     # MANAGEMENT PORT
+      - 80:80     # HTTP
+      - 443:443   # HTTPS
 
     networks:
       - homelab
