@@ -6,6 +6,7 @@ This is collection of useful services and applications in a containerized enviro
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Containers](#containers)
+  - [Dashboards](#dashboards)
   - [DNS](#dns)
   - [Reverse Proxies](#reverse-proxies)
   - [Monitoring](#monitoring)
@@ -27,6 +28,9 @@ docker compose up -d
 ```
 
 ## Containers
+
+### Dashboards
+**[Homepage](https://github.com/gethomepage/homepage)** - A highly customizable homepage (or startpage / application dashboard) with Docker and service API integrations.
 
 ### DNS
 **[AdGuardHome](https://github.com/AdguardTeam/AdGuardHome)** - AdGuard Home is a network-wide software for blocking ads and tracking.

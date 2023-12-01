@@ -1,0 +1,27 @@
+version: "3"
+
+networks:
+  homelab:
+    name: homelab
+    external: true
+
+services:
+  homepage:
+    image: ghcr.io/gethomepage/homepage:latest
+    container_name: homepage
+    restart: unless-stopped
+
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro # optional, for docker integrations
+      - ${CONFIG_DIR}/homepage:/app/config
+
+    # ports:
+    #   - 3000:3000
+
+    networks:
+      - homelab
+
