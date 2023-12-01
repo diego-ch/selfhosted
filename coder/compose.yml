@@ -1,0 +1,19 @@
+version: "3"
+
+networks:
+  homelab:
+    name: homelab
+    external: true
+
+services:
+  coder:
+    image: ghcr.io/coder/coder:latest
+    container_name: coder
+    restart: unless-stopped
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ${CONFIG_DIR}/coder:/home/coder/.config
+
+    networks:
+      - homelab
