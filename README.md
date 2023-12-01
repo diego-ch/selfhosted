@@ -10,6 +10,7 @@ This is collection of useful services and applications in a containerized enviro
   - [DNS](#dns)
   - [Reverse Proxies](#reverse-proxies)
   - [Monitoring](#monitoring)
+  - [Password Managers](#password-managers)
   - [Software Development](#software-development)
 
 ## Getting Started
@@ -42,6 +43,10 @@ docker compose up -d
 ### Monitoring
 - **[OpenSpeedTest](https://github.com/openspeedtest/Speed-Test)** - HTML5 Network Performance Estimation Tool Written in Vanilla Javascript.
 - **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** - Uptime Kuma is an easy-to-use self-hosted monitoring tool.
+
+### Password Managers
+- **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** - Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.
+- **[Vaultwarden-Backup](https://github.com/ttionya/vaultwarden-backup/)** - Automated cloud backup of Vaultwarden's database.
 
 ### Software Development
 - **[Coder](https://github.com/coder/coder)** - Coder is an open-source platform for creating and managing developer workspaces on your preferred clouds and servers.
