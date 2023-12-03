@@ -1,0 +1,21 @@
+version: "3"
+
+networks:
+  homelab:
+    name: homelab
+    external: true
+
+services:
+  qbittorrent:
+    image: ghcr.io/hotio/qbittorrent
+    container_name: qbittorrent
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    volumes:
+      - ${CONFIG_DIR}/qbittorrent:/config
+      - ${DOWNLOAD_DIR}/torrent:/downloads
+    networks:
+      - homelab
+    restart: unless-stopped
