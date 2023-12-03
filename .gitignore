@@ -2,3 +2,4 @@
 # do not sync container config files
 .env
 .config/
+downloads/

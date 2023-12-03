@@ -1,16 +1,16 @@
 version: "2.1"
 services:
   qbittorrent:
-    image: lscr.io/linuxserver/qbittorrent:latest
+    image: hotio/qbittorrent
     container_name: qbittorrent
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=Etc/UTC
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
       - WEBUI_PORT=8080
-    # volumes:
-    # - /path/to/appdata/config:/config
-    # - /path/to/downloads:/downloads
+    volumes:
+      - ${CONFIG_DIR}/qbittorrent:/app/data
+      - ${DOWNLOAD_DIR}/torrent:/downloads
     ports:
       - 8080:8080
       - 6881:6881
