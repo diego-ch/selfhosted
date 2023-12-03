@@ -1,0 +1,18 @@
+version: '3'
+
+networks:
+  homelab:
+     name: homelab
+     external: true
+
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    restart: unless-stopped
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+    networks:
+      - homelab

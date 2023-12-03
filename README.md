@@ -18,7 +18,7 @@ This is collection of useful services and applications in a containerized enviro
 To get started, make sure you have Docker installed on your machine.
 If you don't have it installed, you can follow the official [Docker Get Started Guide](https://docs.docker.com/get-docker/).
 
-```
+```bash
 # clone the repository
 git clone https://github.com/diego-ch/selfhosted.git
 cd selfhosted
@@ -44,6 +44,7 @@ docker compose up -d
 ### Monitoring
 - **[OpenSpeedTest](https://github.com/openspeedtest/Speed-Test)** - HTML5 Network Performance Estimation Tool Written in Vanilla Javascript.
 - **[Uptime Kuma](https://github.com/louislam/uptime-kuma)** - Uptime Kuma is an easy-to-use self-hosted monitoring tool.
+- **[WatchTower](https://github.com/containrrr/watchtower)** - A process for automating Docker container base image updates.
 
 ### Password Managers
 - **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)** - Bitwarden compatible server written in Rust, formerly known as bitwarden_rs.
