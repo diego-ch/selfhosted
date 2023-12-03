@@ -6,9 +6,9 @@ networks:
      external: true
 
 services:
-  valtwarden:
+  vaultwarden:
     image: vaultwarden/server:1.29.2-alpine
-    container_name: valtwarden
+    container_name: vaultwarden
     restart: unless-stopped
 
     environment:
@@ -16,7 +16,7 @@ services:
       PGID: ${PGID}
       TZ: ${TZ}
       # access
-      DOMAIN: "https://valtwarden.${HOMELAB_DOMAIN}"
+      DOMAIN: "https://vaultwarden.${HOMELAB_DOMAIN}"
       ADMIN_TOKEN: "${VAULTWARDEN_ADMIN_TOKEN}"
       # features
       SIGNUPS_ALLOWED: "true"
