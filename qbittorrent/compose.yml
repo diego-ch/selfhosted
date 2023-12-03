@@ -21,5 +21,9 @@ services:
       - ${CONFIG_DIR}/qbittorrent:/config
       - ${DOWNLOAD_DIR}/torrent:/downloads
 
+    # ports:
+    #   - 8080:8080   # WebUI
+    #   - 8118:8118   # Privoxy - if using VPN
+
     networks:
       - homelab

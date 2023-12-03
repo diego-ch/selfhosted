@@ -16,7 +16,7 @@ services:
       - ${CONFIG_DIR}/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
 
     ports:
-      - 81:81     # MANAGEMENT PORT
+      - 81:81     # WebUI
       - 80:80     # HTTP
       - 443:443   # HTTPS
 

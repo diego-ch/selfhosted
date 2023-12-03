@@ -19,7 +19,7 @@ services:
       - ${CONFIG_DIR}/uptime-kuma:/app/data
 
     # ports:
-    #  - 3001:3001
+    #  - 3001:3001  # WebUI
 
     networks:
       - homelab
