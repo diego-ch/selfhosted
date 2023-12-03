@@ -12,7 +12,7 @@ This is collection of useful services and applications in a containerized enviro
   - [Monitoring](#monitoring)
   - [Password Managers](#password-managers)
   - [Software Development](#software-development)
-  - [Torrent](#torrent)
+  - [Downloders](#Downloaders)
 
 ## Getting Started
 To get started, make sure you have Docker installed on your machine.
