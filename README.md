@@ -12,7 +12,7 @@ This is collection of useful services and applications in a containerized enviro
   - [Monitoring](#monitoring)
   - [Password Managers](#password-managers)
   - [Software Development](#software-development)
-  - [Downloaders](#Downloaders)
+  - [Download Managers](#download-managers)
 
 ## Getting Started
 To get started, make sure you have Docker installed on your machine.
@@ -52,5 +52,5 @@ docker compose up -d
 ### Software Development
 - **[Coder](https://github.com/coder/coder)** - Coder is an open-source platform for creating and managing developer workspaces on your preferred clouds and servers.
 
-### Downloaders
-- **[Qbittorrent](https://hotio.dev/containers/qbittorrent)** - qBittorrent is a free and open-source BitTorrent client.
+### Download Managers
+- **[qBittorrent](https://hotio.dev/containers/qbittorrent)** - qBittorrent is a free and open-source BitTorrent client.

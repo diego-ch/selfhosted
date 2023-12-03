@@ -9,13 +9,17 @@ services:
   qbittorrent:
     image: ghcr.io/hotio/qbittorrent
     container_name: qbittorrent
+    restart: unless-stopped
+
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
+      - UMASK=${UMASK}
+
     volumes:
       - ${CONFIG_DIR}/qbittorrent:/config
       - ${DOWNLOAD_DIR}/torrent:/downloads
+
     networks:
       - homelab
-    restart: unless-stopped

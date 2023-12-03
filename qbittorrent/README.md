@@ -1,12 +1,12 @@
-# QBit Torrent
+# qBittorrent
 
 # How to run
 
 ```bash
-docker-compose up -d 
+docker-compose up -d
 ```
 
-access the web interface at http://localhost:8080
+access the web interface through npm
 
 # Documentation:
 
