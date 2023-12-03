@@ -7,14 +7,14 @@ networks:
 
 services:
   qbittorrent:
-    image: hotio/qbittorrent
+    image: ghcr.io/hotio/qbittorrent
     container_name: qbittorrent
     environment:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
     volumes:
-      - ${CONFIG_DIR}/qbittorrent:/app/data
+      - ${CONFIG_DIR}/qbittorrent:/config
       - ${DOWNLOAD_DIR}/torrent:/downloads
     networks:
       - homelab

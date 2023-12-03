@@ -52,5 +52,5 @@ docker compose up -d
 ### Software Development
 - **[Coder](https://github.com/coder/coder)** - Coder is an open-source platform for creating and managing developer workspaces on your preferred clouds and servers.
 
-### Torrent
+### Downloaders
 - **[Qbittorrent](https://hotio.dev/containers/qbittorrent)** - qBittorrent is a free and open-source BitTorrent client.
