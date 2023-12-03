@@ -6,7 +6,7 @@ networks:
     external: true
 
 services:
-    speedtest:
+    openspeedtest:
         image: openspeedtest/latest
         container_name: openspeedtest
         restart: unless-stopped
