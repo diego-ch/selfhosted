@@ -6,7 +6,7 @@
 docker-compose up -d 
 ```
 
-access the web interface at http://localhost:3001
+access the web interface at http://localhost:8080
 
 # Documentation:
 
