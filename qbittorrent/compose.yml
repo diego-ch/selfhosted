@@ -1,4 +1,10 @@
-version: "2.1"
+version: "3"
+
+networks:
+  homelab:
+    name: homelab
+    external: true
+
 services:
   qbittorrent:
     image: hotio/qbittorrent
@@ -7,12 +13,9 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - TZ=${TZ}
-      - WEBUI_PORT=8080
     volumes:
       - ${CONFIG_DIR}/qbittorrent:/app/data
       - ${DOWNLOAD_DIR}/torrent:/downloads
-    ports:
-      - 8080:8080
-      - 6881:6881
-      - 6881:6881/udp
+    networks:
+      - homelab
     restart: unless-stopped
